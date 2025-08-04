@@ -1,27 +1,29 @@
 .header {
-  background: #fcfcfc;
-  padding: 12px 0;
+  background: #fff;
+  border-bottom: 1px solid #949494;
+  padding: 8px 0;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
 
   @include media(desktop) {
-    padding: 8px 0;
+    padding: 12px 0;
   }
 }
 
 .header-container {
-  padding: 0 24px;
+  @include media(desktop) {
+    padding: 0 108px;
+  }
 }
 
 .nav {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
 
   @include media(desktop) {
-    justify-content: center;
   }
 }
 
@@ -31,7 +33,7 @@
   @include media(desktop) {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 32px;
   }
 }
 
@@ -43,23 +45,23 @@
 
 .nav-list-link {
   @include media(desktop) {
-    padding: 8px;
-    font-family: 'Cormorant', sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    color: #222;
-    opacity: 0.8;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #242424;
     transition: all 0.3s ease-in-out;
 
     &:hover,
     &.active {
-      border-bottom: 1px solid #266c7e;
+      color: #2568fd;
     }
   }
 }
 
 .nav-list-link.active {
-  border-bottom: 1px solid #266c7e;
+  color: #2568fd;
 }
 
 .nav-btn {

@@ -1,51 +1,33 @@
 .footer {
-  background: #716d6c;
-  padding: 48px 0;
+  background: #050507;
+  border-top: 1px solid #565656;
+  padding: 60px 0;
 
   @include media(desktop) {
-    padding: 80px 0;
   }
 }
 
 .footer-container {
 }
 
-.footer-content-wrapper {
-  @include media(desktop) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.footer-top-text {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 1.5;
-  text-align: center;
-  color: #fcfcfc;
-  margin-bottom: 48px;
-
-  @include media(desktop) {
-    text-align: left;
-  }
-}
-
 .footer-nav {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 
   @include media(desktop) {
+    margin-bottom: 60px;
   }
 }
 
 .footer-list {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 16px;
 
   @include media(desktop) {
+    flex-direction: row;
     justify-content: end;
+    gap: 74px;
   }
 }
 
@@ -53,24 +35,29 @@
 }
 
 .footer-link {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 300;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
   font-size: 14px;
-  line-height: 1.5;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-  color: #fcfcfc;
+  line-height: 1.57143;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 
 .footer-text {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 300;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.5;
-  color: #fcfcfc;
+  line-height: 1.57143;
   text-align: center;
+  color: rgba(255, 255, 255, 0.8);
 
   @include media(desktop) {
-    text-align: right;
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
