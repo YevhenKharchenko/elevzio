@@ -2,89 +2,99 @@
 }
 
 .about-bg-wrapper {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     max-width: 1440px;
   }
 }
 
 .about-container {
-}
-
-.about-title-wrapper {
-  margin-bottom: 48px;
+  padding: 0;
 
   @include media(desktop) {
-    margin-bottom: 64px;
+    padding: 0 88px;
   }
 }
 
-.about-content-wrapper {
-  @include media(desktop) {
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    gap: 82px;
-  }
-}
-
-.about-quote-wrapper {
+.about-list {
   display: flex;
-  justify-content: center;
-  align-items: start;
-  gap: 24px;
-  margin-bottom: 40px;
+  flex-direction: column;
 
   @include media(desktop) {
-    margin-bottom: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.about-list-item {
+  margin-left: auto;
+  margin-right: auto;
+
+  &:not(:nth-child(3)) {
+    padding: 40px 32px;
+    max-width: 292px;
+    min-height: 396px;
+
+    @include media(desktop) {
+      max-height: 396px;
+    }
+  }
+
+  &:nth-child(1) {
+    background: #000;
+  }
+
+  &:nth-child(2) {
+    background: #141414;
+  }
+
+  &:nth-child(4) {
+    background: #2a2a2a;
   }
 }
 
 .about-img {
-  min-width: 64px;
+  margin-bottom: 40px;
 }
 
-.about-quote-text {
-  font-family: 'Cormorant', sans-serif;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 1.2;
-  color: #222;
-  max-width: 255px;
+.about-item-title {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 16px;
 
   @include media(desktop) {
-    font-size: 32px;
-    max-width: 289px;
+    font-size: 18px;
+    line-height: 1.55556;
   }
 }
 
-.about-text {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 300;
+.about-item-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.4;
-  text-align: center;
-  color: #222;
+  line-height: 1.57143;
+  color: #fff;
 
   @include media(desktop) {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
-    text-align: left;
-    max-width: 741px;
   }
 }
 
-.about-br {
-  display: none;
+.about-item-bottom-text {
+  margin-top: 8px;
+}
 
-  @include media(desktop) {
-    display: block;
-  }
+.about-bg-img {
 }

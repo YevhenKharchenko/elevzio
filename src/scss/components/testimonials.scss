@@ -1,18 +1,10 @@
 .testimonials-section {
-  background: linear-gradient(180deg, #fcfcfc 0%, #cbc7c4 100%);
-
-  @include media(desktop) {
-    background: linear-gradient(246deg, #cbc7c4 0%, #fcfcfc 100%);
-  }
+  background: #f6f7f9;
 }
 
 .testimonials-bg-wrapper {
-  padding-top: 48px;
-  padding-bottom: 464px;
-  background-image: url(../img/testimonials/testimonials-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
@@ -20,8 +12,6 @@
   @include media(desktop) {
     padding-top: 80px;
     padding-bottom: 80px;
-    background-image: url(../img/testimonials/testimonials-bg-desk.png);
-    background-position: bottom right;
     max-width: 1440px;
   }
 }
@@ -29,61 +19,85 @@
 .testimonials-container {
 }
 
-.testimonials-title-wrapper {
+.testimonials-title {
   margin-bottom: 40px;
 
   @include media(desktop) {
-    margin-bottom: 64px;
-  }
-}
-
-.testimonials-subtitle {
-  text-align: center;
-  margin-bottom: 40px;
-
-  @include media(desktop) {
-    text-align: left;
-    margin-bottom: 48px;
-  }
-}
-
-.testimonials-br {
-  @include media(desktop) {
-    display: none;
+    margin-bottom: 60px;
   }
 }
 
 .testimonials-list {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  align-items: center;
+  gap: 32px;
 
   @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
 .testimonials-list-item {
-  padding: 0 8px;
+  padding: 24px;
 
   @include media(desktop) {
-    max-width: 588px;
+    max-width: 400px;
   }
 }
 
 .testimonials-item-text {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #222;
-  margin-bottom: 8px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57143;
+  text-align: center;
+  color: #2a2a2a;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.testimonials-item-avatar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+}
+
+.testimonials-img {
+}
+
+.testimonials-item-name-wrapper {
 }
 
 .testimonials-item-name {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.57143;
+  color: #000;
+  margin-bottom: 4px;
+
+  @include media(desktop) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.testimonials-item-profession {
+  font-family: 'Manrope', sans-serif;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.5;
-  text-align: right;
-  color: #222;
+  font-size: 14px;
+  line-height: 1.57143;
+  color: #2a2a2a;
+
+  @include media(desktop) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
