@@ -1,132 +1,107 @@
 .contact-section {
-  background: #393b3f;
+  background: #2a2a2a;
 }
 
 .contact-bg-wrapper {
-  padding-top: 48px;
-  padding-bottom: 416px;
-  background-image: url(../img/contact/contact-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
-    padding-top: 80px;
-    padding-bottom: 216px;
-    background-image: url(../img/contact/contact-bg-desk.png);
-    background-position: bottom center;
+    padding-top: 0;
+    padding-bottom: 0;
     max-width: 1440px;
   }
 }
 
 .contact-container {
+  padding: 0;
+
+  @include media(desktop) {
+    padding-left: 88px;
+  }
+}
+
+.contact-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 92px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+  }
+}
+
+.contact-text-wrapper {
+  max-width: 343px;
+
+  @include media(desktop) {
+    max-width: 508px;
+  }
 }
 
 .contact-title {
-  color: #fcfcfc;
-
-  @include media(desktop) {
-    color: #222;
-  }
-}
-
-.contact-title-wrapper {
-  margin-bottom: 48px;
-
-  @include media(desktop) {
-    margin-bottom: 64px;
-  }
+  color: #fff;
+  margin-bottom: 8px;
 }
 
 .contact-subtitle {
-  color: #fcfcfc;
-  text-align: center;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
   margin-bottom: 40px;
 
   @include media(desktop) {
-    color: #222;
-    text-align: left;
-    margin-bottom: 64px;
-  }
-}
-
-.contact-subtitle-br {
-  @include media(desktop) {
-    display: none;
-  }
-}
-
-.contact-text {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: #fcfcfc;
-  margin-bottom: 24px;
-
-  @include media(desktop) {
-    font-size: 24px;
-    color: #222;
-    text-align: left;
-    margin-bottom: 48px;
-  }
-}
-
-.contact-email-wrapper {
-  @include media(desktop) {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+    font-size: 18px;
+    line-height: 1.55556;
   }
 }
 
 .contact-email-text {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: #fcfcfc;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.57143;
+  color: #949494;
   margin-bottom: 8px;
 
   @include media(desktop) {
-    font-size: 24px;
-    color: #222;
-    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
 
 .contact-email-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #cbc7c4;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #fff;
+  display: block;
+  margin-bottom: 40px;
 
   @include media(desktop) {
     font-size: 24px;
-    color: #266c7e;
+    line-height: 1.33333;
   }
 }
 
-.email-icon {
-  @include media(desktop) {
-    display: none;
-  }
-}
-
-.envelope-icon {
-  display: none;
+.contact-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.57143;
+  color: #fff;
 
   @include media(desktop) {
-    display: block;
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
